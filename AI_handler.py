@@ -8,7 +8,7 @@ load_dotenv()
 # Initialize the client
 client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
 
-# THE SYSTEM INSTRUCTION: This is the how the model will handle each prompt
+#This is the how the model will handle each prompt
 SYSTEM_INSTRUCTION = """
 You are a highly efficient academic assistant for a Software Engineering student at INSAT.
 Your task is to analyze a batch of emails and return a JSON list.
@@ -67,10 +67,8 @@ if __name__ == "__main__":
 
     print(f"Sending {len(test_batch)} test emails to Gemini...")
     
-    # 2. Execute the analysis
     results = analyze_email_batch(test_batch)
-    
-    # 3. Print the formatted output
+
     if not results:
         print("No results returned. Check your API key or connection.")
     else:
