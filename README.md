@@ -48,18 +48,30 @@ To power the AI summarization:
     pip install -r requirements.txt
 3. **Configure Environment Variables**
     The script uses a .env file to keep your API keys secure.
+   
+      1.Create a file named .env in the root directory.
 
-    . Create a file named .env in the root directory.
-    . Paste the following inside:
-        GEMINI_API_KEY=your_copied_api_key_here
+      2.Paste the following inside:
+
+            GEMINI_API_KEY=your_copied_api_key_here
 
 ## 🏃 Usage
 Once your `credentials.json` is in the folder and your `.env` is set up:
 1. **Run the Orchestrator:**
-  ```bash
-  python main.py
-
+   ```bash
+   python main.py
 2. **First-Run Authentication**
-On your first execution, a Google sign-in page will open in your browser. Log in with your INSAT/Student account to grant the script permission to read your emails. This will create a token.pickle file for future use.
+
+   On your first execution, a Google sign-in page will open in your browser.
+
+
+   Log in with your INSAT/Student account to grant the script permission to read your emails.
+
+
+   This will create a token.pickle file for future use.
 3. **Output**
- he script will scan for unread messages, batch them, and print an AI-generated summary of youracademic priorities directly to the terminal.
+
+   The script will scan for unread messages, batch them,
+
+ 
+   and print an AI-generated summary of your academic priorities directly to the terminal.
