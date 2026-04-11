@@ -20,7 +20,7 @@
 ### 1. Google Cloud Credentials (`credentials.json`)
 To allow the script to talk to your Gmail account:
 1. Go to the [Google Cloud Console](https://console.cloud.google.com/).
-2. Create a new project named "Mail-Sentinel".
+2. Create a new project named "nameasyoulike".
 3. In **APIs & Services > Library**, search for "Gmail API" and click **Enable**.
 4. Go to **APIs & Services > OAuth consent screen**, choose "External", and add your email as a **Test User**.
 5. Go to **APIs & Services > Credentials**, click **Create Credentials > OAuth client ID**.
@@ -48,10 +48,9 @@ To power the AI summarization:
     pip install -r requirements.txt
 3. **Configure Environment Variables**
     The script uses a .env file to keep your API keys secure.
-
-        ####Create a file named .env in the root directory.
-        ####Paste the following inside:
-    GEMINI_API_KEY=your_copied_api_key_here
+        Create a file named .env in the root directory.
+        Paste the following inside:
+           GEMINI_API_KEY=your_copied_api_key_here
 
 ## 🏃 Usage
 Once your `credentials.json` is in the folder and your `.env` is set up:
