@@ -73,7 +73,7 @@ if __name__ == "__main__":
         print("No results returned. Check your API key or connection.")
     else:
         for item in results:
-            # We use a bit of color-coding logic for the test
+            
             icon = "*******" if item['urgency'] >= 8 else "**"
             
             print(f"{icon} [URGENCY: {item['urgency']}/10]")

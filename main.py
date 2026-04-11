@@ -33,9 +33,9 @@ def run_automation():
             time.sleep(2)
 
 
-    print("\n" + "="*50)
+    
     print("<<<<<TODAY'S MAIL SUMMARY>>>>>")
-    print("="*50)
+    
     
     # Sort results by urgency (High to Low)
     sorted_results = sorted(all_results, key=lambda x: x['urgency'], reverse=True)
