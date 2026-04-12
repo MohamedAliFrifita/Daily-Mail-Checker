@@ -40,8 +40,8 @@ To power the AI summarization:
 
 1. **Clone the repository:**
    ```bash
-   git clone <your-repo-url>
-   cd <your-repo-name>
+   cd <your-working-directory>
+   git clone <repo-url>
 2. **Install Dependencies**
     Ensure you have Python installed, then run the following to install all required Google and AI libraries:
     ```bash
